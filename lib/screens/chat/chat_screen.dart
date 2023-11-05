@@ -15,22 +15,20 @@ class ChatScreen extends StatelessWidget {
       appBar: AppBar(
         toolbarHeight: 70,
         leading: GestureDetector(
-          onTap: () => Navigator.pop(context),
-          child: const Icon(
-            Icons.close,
-            color: Colors.white,
-          ),
-        ),
+            onTap: () => Navigator.pop(context),
+            child: const Icon(
+              Icons.close,
+              color: Colors.white,
+            )),
         titleSpacing: 0,
         title: const TitleWidget(),
         actions: const [
           Padding(
-            padding: EdgeInsets.only(right: 10),
-            child: Icon(
-              Icons.more_vert,
-              color: Colors.white,
-            ),
-          )
+              padding: EdgeInsets.only(right: 10),
+              child: Icon(
+                Icons.more_vert,
+                color: Colors.white,
+              ))
         ],
         backgroundColor: primaryColor,
       ),
