@@ -18,6 +18,7 @@ class BottomNavProvider extends ChangeNotifier {
 
   updateCurrentScreen(index) {
     currentWidget = screens[index];
+    screenIndex = index;
     notifyListeners();
   }
 

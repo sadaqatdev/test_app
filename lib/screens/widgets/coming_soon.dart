@@ -8,7 +8,8 @@ class ComingSoon extends StatelessWidget {
     return const Center(
       child: Text(
         "Coming Soon",
-        style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+        style: TextStyle(
+            fontSize: 20, fontWeight: FontWeight.w500, color: Colors.black),
       ),
     );
   }

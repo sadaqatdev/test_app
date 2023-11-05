@@ -6,6 +6,7 @@ import 'package:streamedinc/screens/bottomnav/provider/bottom_nav_provider.dart'
 import 'package:streamedinc/screens/widgets/snakbar_widget.dart';
 import 'package:streamedinc/theme/colors.dart';
 import 'package:streamedinc/screens/widgets/gradient_text.dart';
+import 'package:streamedinc/theme/theme_ext.dart';
 
 import '../../utils/gradients.dart';
 import '../../utils/lables_utils.dart';
@@ -116,13 +117,9 @@ class NavBarItem extends StatelessWidget {
                   style: const TextStyle(
                       fontSize: 10, fontWeight: FontWeight.bold),
                 )
-              : Text(
-                  label,
-                  style: const TextStyle(
-                      fontSize: 10,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.grey),
-                )
+              : Text(label,
+                  style: context.labelStyle
+                      .copyWith(fontSize: 10, fontWeight: FontWeight.w700))
         ],
       ),
     );

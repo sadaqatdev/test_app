@@ -96,7 +96,7 @@ class ChatScreen extends StatelessWidget {
                             style: context.labelStyle.copyWith(
                                 fontSize: 16,
                                 fontWeight: FontWeight.w400,
-                                color: Color(0xffBDBDBD))),
+                                color: const Color(0xffBDBDBD))),
                       ),
                     ),
                   ),
@@ -129,7 +129,7 @@ class ChatScreen extends StatelessWidget {
                         Text(
                           "10:20",
                           style: context.labelStyle.copyWith(
-                              color: Color(0xff71839D),
+                              color: const Color(0xff71839D),
                               fontSize: 14,
                               fontWeight: FontWeight.w400),
                         )
@@ -150,15 +150,15 @@ class ChatScreen extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text(
+                        Text(
                           "Counter Offer",
-                          style: TextStyle(
-                              color: Color(0xff3CFEDE),
+                          style: context.labelStyle.copyWith(
+                              color: const Color(0xff3CFEDE),
                               fontSize: 16,
-                              fontWeight: FontWeight.w600),
+                              fontWeight: FontWeight.w700),
                         ),
                         const SizedBox(
-                          height: 10,
+                          height: 14,
                         ),
                         Container(
                           height: 150,
@@ -170,45 +170,57 @@ class ChatScreen extends StatelessWidget {
                                       AssetImage("assets/images/macbook.png"),
                                   fit: BoxFit.cover)),
                         ),
-                        const Text(
+                        Text(
                           "DSLR NIKON 520D with 18mm Lense",
-                          style: TextStyle(
+                          style: context.labelStyle.copyWith(
                               color: Colors.white,
                               fontSize: 16,
-                              fontWeight: FontWeight.w600),
+                              fontWeight: FontWeight.w700),
                         ),
                         const SizedBox(
                           height: 5,
                         ),
-                        const Row(
+                        Row(
                           children: [
                             Text(
                               "Location:",
-                              style: TextStyle(color: Colors.white),
+                              style: context.labelStyle.copyWith(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 12),
                             ),
                             Text(
                               " Bur Dubai, United Arab Emirates",
-                              style: TextStyle(color: Color(0xff3CFEDE)),
-                            )
+                              style: context.labelStyle.copyWith(
+                                  color: Color(0xff3CFEDE),
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 12),
+                            ),
                           ],
                         ),
                         const SizedBox(
-                          height: 5,
+                          height: 8,
                         ),
-                        const Row(
+                        Row(
                           children: [
                             Text(
                               "Offered:",
-                              style: TextStyle(color: Colors.white),
+                              style: context.labelStyle.copyWith(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 12),
                             ),
                             Text(
                               " \$1200 + 200 Saltaries + Product",
-                              style: TextStyle(color: Color(0xff3CFEDE)),
+                              style: context.labelStyle.copyWith(
+                                  color: Color(0xff3CFEDE),
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 12),
                             )
                           ],
                         ),
                         const SizedBox(
-                          height: 10,
+                          height: 23,
                         ),
                         SizedBox(
                           height: 100,
@@ -229,7 +241,7 @@ class ChatScreen extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(
-                          height: 20,
+                          height: 23,
                         ),
                         Row(
                           children: [
@@ -244,12 +256,12 @@ class ChatScreen extends StatelessWidget {
                                   decoration: BoxDecoration(
                                       color: const Color(0xffF75555),
                                       borderRadius: BorderRadius.circular(15)),
-                                  child: const Text(
+                                  child: Text(
                                     "Reject",
-                                    style: TextStyle(
+                                    style: context.labelStyle.copyWith(
                                         color: Colors.white,
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w600),
+                                        fontWeight: FontWeight.w700,
+                                        fontSize: 16),
                                   ),
                                 ),
                               ),
@@ -268,12 +280,12 @@ class ChatScreen extends StatelessWidget {
                                   decoration: BoxDecoration(
                                       gradient: gradientInverse,
                                       borderRadius: BorderRadius.circular(15)),
-                                  child: const Text(
+                                  child: Text(
                                     "Accept",
-                                    style: TextStyle(
+                                    style: context.labelStyle.copyWith(
                                         color: Colors.white,
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w600),
+                                        fontWeight: FontWeight.w700,
+                                        fontSize: 16),
                                   ),
                                 ),
                               ),
