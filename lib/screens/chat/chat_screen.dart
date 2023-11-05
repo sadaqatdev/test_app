@@ -6,7 +6,7 @@ import 'package:streamedinc/theme/theme_ext.dart';
 import 'package:streamedinc/utils/assets_paths.dart';
 
 class ChatScreen extends StatelessWidget {
-  ChatScreen({super.key});
+  const ChatScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class ChatScreen extends StatelessWidget {
           ),
         ),
         titleSpacing: 0,
-        title: TitleWidget(),
+        title: const TitleWidget(),
         actions: const [
           Padding(
             padding: EdgeInsets.only(right: 10),
@@ -64,13 +64,13 @@ class ChatScreen extends StatelessWidget {
                   const SizedBox(
                     height: 25,
                   ),
-                  MessageTile(),
+                  const MessageTile(),
                   MainWidget()
                 ],
               ),
             ),
           ),
-          MessageTypeTile(),
+          const MessageTypeTile(),
         ],
       ),
     );
